@@ -4,9 +4,15 @@ A reusable GenLayer Intelligent Contract for resolving a precisely defined publi
 
 This repository contains the standalone contract, ABI, SDK-based tests, a reproducible offline demo, archive preparation tool, CI, and Studio deployment instructions. There is no frontend or external-wallet requirement.
 
+## Status
+
+Implemented and checked on November 18, 2026: **33 SDK tests passed**, GenVM lint/validation and type checking passed, and the four-case offline demo matched its expected output.
+
+Deployed with the hosted Studio built-in account at `0x71B6C44Ab78C8CE18f9CEfdd20C0a94a2cb9F536`. The live empty-evidence smoke claim completed creation, registry locking, verification, and finalization under Normal (Full Consensus), returning `INSUFFICIENT` with `final: true`. This is a **Studio simulator deployment**, not a testnet/mainnet deployment or a live semantic fact-verification demonstration. [Deployment and receipt record](deployments/studio.json) · [Validation report](docs/VALIDATION.md).
+
 ## Quick start
 
-Requires Python 3.12+.
+Requires Python 3.12+. Tests and the demo explicitly select GenVM SDK release `v0.2.16`, matching the contract dependency header, so a fresh machine does not follow an incompatible latest release.
 
 ```bash
 pip install -r requirements-dev.txt

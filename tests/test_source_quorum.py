@@ -28,7 +28,7 @@ def state(c):
 def setup(direct_vm, direct_deploy):
     direct_vm.check_pickling = True
     warp(direct_vm, "2026-11-09T12:00:00Z")
-    c = direct_deploy(PATH)
+    c = direct_deploy(PATH, sdk_version="v0.2.16")
     c.create_claim("mainnet", "Did XYZ launch mainnet by Nov 10?", "Public production mainnet, excluding testnets.",
                    ts("2026-11-10T23:59:59Z"), ts("2026-11-11T00:00:00Z"), 2, 60)
     c.register_sources("mainnet", json.dumps(SOURCES))
@@ -287,7 +287,7 @@ def test_evidence_validation(setup, mutation):
 
 def test_owned_domains_cannot_supply_quorum(direct_vm, direct_deploy):
     warp(direct_vm, "2026-11-09T12:00:00Z")
-    c = direct_deploy(PATH)
+    c = direct_deploy(PATH, sdk_version="v0.2.16")
     c.create_claim("mainnet", "Claim", "Criteria", ts("2026-11-10T23:59:59Z"), ts("2026-11-11T00:00:00Z"), 2, 60)
     sources = [dict(s, publisher="same") for s in SOURCES]
     with direct_vm.expect_revert("Too few publisher groups"):

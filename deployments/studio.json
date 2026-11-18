@@ -1,0 +1,37 @@
+{
+  "environment": "GenLayer hosted Studio simulator",
+  "studio_url": "https://studio.genlayer.com/run-debug",
+  "execution_mode": "Normal (Full Consensus)",
+  "external_wallet_connected": false,
+  "account": "Studio built-in account (0xd4...F00C shown in UI)",
+  "contract_address": "0x71B6C44Ab78C8CE18f9CEfdd20C0a94a2cb9F536",
+  "source_path": "contracts/source_quorum.py",
+  "studio_import_name": "source_quorum_v1.py",
+  "source_sha256": "cbe37bea7de29dccbcfcdc25810a8b5e17f90210486b6f44fbf0da00a256ae98",
+  "deployment_transaction": "0x92530c74157a4b7534aee327cd14447c9196a239e59b04c636da0bd9d09daeaf",
+  "deployment_status": "FINALIZED",
+  "smoke_test": {
+    "claim_id": "sourcequorum-availability-smoke",
+    "kind": "EMPTY_EVIDENCE_AVAILABILITY_AND_LIFECYCLE",
+    "real_world_fact_verified": false,
+    "cutoff": 1794933758,
+    "submission_deadline": 1795020308,
+    "minimum": 2,
+    "challenge_seconds": 60,
+    "create_transaction": "0x2f402d31fc096b257a9404c26423bb67d6469a70cb2c30bc1923aefb7a9f21cf",
+    "register_sources_transaction": "0x8028acf7b2ed1b740a4da5153cf70c1563774e2e544311ba46d2776ac35e814c",
+    "verify_transaction": "0xdd4b03949f486ab23d91f85afe23b9555dec2ed2c80f22cb226920805c2be4d4",
+    "finalize_transaction": "0x749ee9e62f60b79a79f1d84bdb811e978866906a06f1506f279d8536d5645fcc",
+    "transaction_statuses": "All five transactions FINALIZED in Studio UI",
+    "result": {
+      "challenge_deadline": 1795020394,
+      "final": true,
+      "phase": "FINAL",
+      "policy_hash": "eb435e43a39effac75e7657c6efc2545439338a6901b71cc498e5f4be222d440",
+      "sources_hash": "b1e93e6f2fd8bee5e676ab2cf6882d48e8f51e340d7a7f480f4e5a7f63a4ce7e",
+      "verdict": "INSUFFICIENT"
+    }
+  },
+  "checked_at_utc": "2026-11-18T16:48:54.239957+00:00",
+  "proof_screenshot": "docs/studio-proof.jpg"
+}

@@ -18,7 +18,7 @@ def run(labels):
     vm.check_pickling = True
     with vm.activate():
         warp(vm, "2026-11-09T12:00:00Z")
-        c = deploy_contract(ROOT / "contracts/source_quorum.py", vm)
+        c = deploy_contract(ROOT / "contracts/source_quorum.py", vm, sdk_version="v0.2.16")
         c.create_claim("mainnet", "Did XYZ launch its mainnet by November 10, 2026?",
                        "A public production mainnet must be operational; exclude testnet and launch plans.",
                        ts("2026-11-10T23:59:59Z"), ts("2026-11-11T00:00:00Z"), 2, 60)
