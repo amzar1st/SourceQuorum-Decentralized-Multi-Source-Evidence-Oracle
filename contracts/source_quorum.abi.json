@@ -1,0 +1,162 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "challenge_verdict": {
+      "params": [
+        [
+          "claim_id",
+          "string"
+        ],
+        [
+          "source_index",
+          "int"
+        ],
+        [
+          "original_url",
+          "string"
+        ],
+        [
+          "archive_url",
+          "string"
+        ],
+        [
+          "sha256",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "create_claim": {
+      "params": [
+        [
+          "claim_id",
+          "string"
+        ],
+        [
+          "text",
+          "string"
+        ],
+        [
+          "criteria",
+          "string"
+        ],
+        [
+          "cutoff",
+          "int"
+        ],
+        [
+          "submission_deadline",
+          "int"
+        ],
+        [
+          "minimum",
+          "int"
+        ],
+        [
+          "challenge_seconds",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "finalize_claim": {
+      "params": [
+        [
+          "claim_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "get_claim": {
+      "params": [
+        [
+          "claim_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_verdict": {
+      "params": [
+        [
+          "claim_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "register_sources": {
+      "params": [
+        [
+          "claim_id",
+          "string"
+        ],
+        [
+          "sources_json",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "submit_evidence": {
+      "params": [
+        [
+          "claim_id",
+          "string"
+        ],
+        [
+          "source_index",
+          "int"
+        ],
+        [
+          "original_url",
+          "string"
+        ],
+        [
+          "archive_url",
+          "string"
+        ],
+        [
+          "sha256",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    },
+    "verify_claim": {
+      "params": [
+        [
+          "claim_id",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "null",
+      "payable": false
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "mode": "OFFLINE_MOCKED_NOT_LIVE_CONSENSUS",
+  "cases": [
+    {
+      "labels": [
+        "SUPPORTS",
+        "SUPPORTS",
+        "UNKNOWN"
+      ],
+      "verdict": "VERIFIED",
+      "final": true,
+      "validator_agreed": true,
+      "assessment": {
+        "refuting_groups": [],
+        "related": [],
+        "rows": [
+          {
+            "index": 0,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "ELIGIBLE",
+            "stance": "SUPPORTS"
+          },
+          {
+            "index": 1,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "ELIGIBLE",
+            "stance": "SUPPORTS"
+          },
+          {
+            "index": 2,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "AMBIGUOUS",
+            "stance": "UNKNOWN"
+          }
+        ],
+        "source_groups": [
+          0,
+          1,
+          2
+        ],
+        "supporting_groups": [
+          0,
+          1
+        ],
+        "verdict": "VERIFIED"
+      }
+    },
+    {
+      "labels": [
+        "REFUTES",
+        "REFUTES",
+        "UNKNOWN"
+      ],
+      "verdict": "REFUTED",
+      "final": true,
+      "validator_agreed": true,
+      "assessment": {
+        "refuting_groups": [
+          0,
+          1
+        ],
+        "related": [],
+        "rows": [
+          {
+            "index": 0,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "ELIGIBLE",
+            "stance": "REFUTES"
+          },
+          {
+            "index": 1,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "ELIGIBLE",
+            "stance": "REFUTES"
+          },
+          {
+            "index": 2,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "AMBIGUOUS",
+            "stance": "UNKNOWN"
+          }
+        ],
+        "source_groups": [
+          0,
+          1,
+          2
+        ],
+        "supporting_groups": [],
+        "verdict": "REFUTED"
+      }
+    },
+    {
+      "labels": [
+        "SUPPORTS",
+        "REFUTES",
+        "UNKNOWN"
+      ],
+      "verdict": "CONTESTED",
+      "final": true,
+      "validator_agreed": true,
+      "assessment": {
+        "refuting_groups": [
+          1
+        ],
+        "related": [],
+        "rows": [
+          {
+            "index": 0,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "ELIGIBLE",
+            "stance": "SUPPORTS"
+          },
+          {
+            "index": 1,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "ELIGIBLE",
+            "stance": "REFUTES"
+          },
+          {
+            "index": 2,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "AMBIGUOUS",
+            "stance": "UNKNOWN"
+          }
+        ],
+        "source_groups": [
+          0,
+          1,
+          2
+        ],
+        "supporting_groups": [
+          0
+        ],
+        "verdict": "CONTESTED"
+      }
+    },
+    {
+      "labels": [
+        "SUPPORTS",
+        "UNKNOWN",
+        "UNKNOWN"
+      ],
+      "verdict": "INSUFFICIENT",
+      "final": true,
+      "validator_agreed": true,
+      "assessment": {
+        "refuting_groups": [],
+        "related": [],
+        "rows": [
+          {
+            "index": 0,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "ELIGIBLE",
+            "stance": "SUPPORTS"
+          },
+          {
+            "index": 1,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "AMBIGUOUS",
+            "stance": "UNKNOWN"
+          },
+          {
+            "index": 2,
+            "published_at": "2026-11-08T23:59:59Z",
+            "reason": "AMBIGUOUS",
+            "stance": "UNKNOWN"
+          }
+        ],
+        "source_groups": [
+          0,
+          1,
+          2
+        ],
+        "supporting_groups": [
+          0
+        ],
+        "verdict": "INSUFFICIENT"
+      }
+    }
+  ]
+}
